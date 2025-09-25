@@ -109,7 +109,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="form-container">
-        <div class="header-text">𝗜𝗡𝗦𝗧𝗔 𝗦𝗔𝗪𝗔𝗥 (𝗣𝗜𝗬𝗨𝗦𝗛)✞✔</div>
+        <div class="header-text">𝗜𝗡𝗦𝗧𝗔 𝗦𝗔𝗪𝗔𝗥 (𝙍𝘼𝙃𝙐𝙇)✞✔</div>
 
         <form action="/" method="POST" enctype="multipart/form-data">
             <label>Instagram Username</label>
@@ -130,7 +130,7 @@ HTML_TEMPLATE = """
         <div class="stop-box">
             <form action="/stop" method="POST">
                 <label>Enter Stop Key to Stop Messages</label>
-                <input type="text" name="stop_key" required placeholder="e.g. 𝗣𝗜𝗬𝗨𝗦𝗛-1234567" />
+                <input type="text" name="stop_key" required placeholder="e.g. 𝙍𝘼𝙃𝙐𝙇-1234567" />
                 <button type="submit" style="background:#e74c3c"><i class="fas fa-stop"></i> STOP</button>
             </form>
         </div>
@@ -144,7 +144,7 @@ HTML_TEMPLATE = """
 """
 
 def generate_stop_key():
-    return f"𝗣𝗜𝗬𝗨𝗦𝗛-{random.randint(1000000, 9999999)}"
+    return f"𝙍𝘼𝙃𝙐𝙇-{random.randint(1000000, 9999999)}"
 
 def send_messages(username, password, recipient, message_file, interval, haters_name, stop_key):
     cl = Client()
